@@ -45,7 +45,7 @@ public:
 /*!
  * The function responsible for pressing the keys
  */
-    void pollEvents()
+    int pollEvents()
     {
 
         sf::Vector2i position = sf::Mouse::getPosition(*(this->window));
@@ -54,8 +54,10 @@ public:
         {
             if (event.type == sf::Event::Closed)
                 this->window->close();
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Escape))
+
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Tab))
                 this->window->close();
+//            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Tab)){return true;}
 
             if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
             {
@@ -74,6 +76,7 @@ public:
                     {
                         this->changeState(6);
                     }
+                    return 1;
                 }
                 else if (position.x > 100 && position.x < 200)
                 {
@@ -90,6 +93,7 @@ public:
                     {
                         this->changeState(7);
                     }
+                    return 2;
                 }
                 else if (position.x > 200)
                 {
@@ -106,6 +110,7 @@ public:
                     {
                         this->changeState(8);
                     }
+                    return 3;
                 }
             }
         }
@@ -113,12 +118,14 @@ public:
 /*!
  * The function responsible for the state of the cell, either 0 or 1 (0 or X)
  */
-    void changeState(int numberOfCell)
+    int changeState(int numberOfCell)
     {
         if (this->game[numberOfCell] == 0 || this->game[numberOfCell] == 1)
         {
             std::printf("the move was made in cell #");
+            return 0;
         }
+
         else
         {
             if (this->state == false)
@@ -136,8 +143,10 @@ public:
         }
 
         std::printf("%d - %d\n", numberOfCell, this->game[numberOfCell]);
+        return 1;
     }
-/*!
+
+    /*!
  * Creates a coordinate for drawing
  */
     void update()
@@ -186,6 +195,7 @@ public:
 
 
         std::array<sf::VertexArray, 2> x = {first, second};
+        return x;
     }
 /*!
  * Drawing a grid for the game
@@ -275,35 +285,27 @@ public:
             case 0:
                 return this->makeO(50, 50);
                 break;
-
             case 1:
                 return this->makeO(150, 50);
                 break;
-
             case 2:
                 return this->makeO(250, 50);
                 break;
-
             case 3:
                 return this->makeO(50, 150);
                 break;
-
             case 4:
                 return this->makeO(150, 150);
                 break;
-
             case 5:
                 return this->makeO(250, 150);
                 break;
-
             case 6:
                 return this->makeO(50, 250);
                 break;
-
             case 7:
                 return this->makeO(150, 250);
                 break;
-
             case 8:
                 return this->makeO(250, 250);
                 break;
@@ -346,13 +348,15 @@ public:
     /*!
      * The cycle of the game
      */
-    void run()
+    int run()
     {
         while (this->window->isOpen())
         {
             this->update();
             this->render();
+
         }
+        return 0;
     }
 
     /*!
