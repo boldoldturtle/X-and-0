@@ -8,8 +8,8 @@ ___
 
 ## An example of the game
 ___
-###Detailed step-by-step lessons on how to create a tic-tac-toe game.
-###https://www.youtube.com/playlist?list=PLRtjMdoYXLf4L0UVTggZdTV55baO6x6CO
+### Detailed step-by-step lessons on how to create a tic-tac-toe game.
+### https://www.youtube.com/playlist?list=PLRtjMdoYXLf4L0UVTggZdTV55baO6x6CO
 
 ## Description
 ___
