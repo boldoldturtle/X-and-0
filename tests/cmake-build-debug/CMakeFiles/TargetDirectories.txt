@@ -1,0 +1,3 @@
+C:/Users/ASUS/Desktop/untitled2/tests/cmake-build-debug/CMakeFiles/tests.dir
+C:/Users/ASUS/Desktop/untitled2/tests/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ASUS/Desktop/untitled2/tests/cmake-build-debug/CMakeFiles/rebuild_cache.dir

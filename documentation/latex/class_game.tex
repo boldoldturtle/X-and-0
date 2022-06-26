@@ -1,0 +1,220 @@
+\hypertarget{class_game}{}\doxysection{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+{\ttfamily \#include $<$game1.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_a15f85bb1959ffeae84f17c7f08db9018}{init\+Window}} ()
+\item 
+void \mbox{\hyperlink{class_game_a8ea4777fdc751b40f778997b76ee7cf9}{poll\+Events}} ()
+\item 
+void \mbox{\hyperlink{class_game_a59057e71a68e69244973dc65d4f4da6a}{change\+State}} (int number\+Of\+Cell)
+\item 
+void \mbox{\hyperlink{class_game_a79df6376b332d63c9eca0dcee30305c3}{update}} ()
+\item 
+sf\+::\+Circle\+Shape \mbox{\hyperlink{class_game_a83bb177df714d38779ac0b17a560eaa5}{makeO}} (float x\+\_\+0, float y\+\_\+0)
+\item 
+std\+::array$<$ sf\+::\+Vertex\+Array, 2 $>$ \mbox{\hyperlink{class_game_a7017ade48dee9c965f56f77c5e992339}{makeX}} (float x\+\_\+0, float y\+\_\+0)
+\item 
+std\+::array$<$ sf\+::\+Vertex\+Array, 4 $>$ \mbox{\hyperlink{class_game_a29ef548ad85b1eb5473cd8664a7e0cb2}{make\+Grid}} ()
+\item 
+std\+::array$<$ sf\+::\+Vertex\+Array, 2 $>$ \mbox{\hyperlink{class_game_a6c79ed38c2abb685f737760b4ebd88e4}{drawX}} (int number\+Of\+Cell)
+\item 
+sf\+::\+Circle\+Shape \mbox{\hyperlink{class_game_a045b319fc8b9c8e8ca183bec74aff893}{drawO}} (int number\+Of\+Cell)
+\item 
+void \mbox{\hyperlink{class_game_a15ddd769261d923827a3cdf41499c843}{render}} ()
+\item 
+void \mbox{\hyperlink{class_game_a1ab78f5ed0d5ea879157357cf2fb2afa}{run}} ()
+\item 
+\mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game}} ()
+\item 
+\mbox{\hyperlink{class_game_ae3d112ca6e0e55150d2fdbc704474530}{$\sim$\+Game}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Render\+Window $\ast$ \mbox{\hyperlink{class_game_af00d15651edd39b7c28262b23bb50c7a}{window}}
+\item 
+sf\+::\+Context\+Settings \mbox{\hyperlink{class_game_a0b8e19cc87748ad6d986eaeca264b279}{settings}}
+\item 
+sf\+::\+Event \mbox{\hyperlink{class_game_a399e6ac5b37307b16dc9f769e0b538c9}{event}}
+\item 
+std\+::array$<$ sf\+::\+Vertex\+Array, 4 $>$ \mbox{\hyperlink{class_game_a5917c68cc38a58754e2114a886d93ea4}{grid}}
+\item 
+std\+::array$<$ int, 9 $>$ \mbox{\hyperlink{class_game_a3987c7e6e2bcc101c1be039b3d9e956c}{game}}
+\item 
+bool \mbox{\hyperlink{class_game_a75c39a2ccf296db2115781906a3711d7}{state}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The class responsible for the operation of the game It contains all the logic of the game Drawing using SFML 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_ad59df6562a58a614fda24622d3715b65}\label{class_game_ad59df6562a58a614fda24622d3715b65}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calling the window opening function \mbox{\Hypertarget{class_game_ae3d112ca6e0e55150d2fdbc704474530}\label{class_game_ae3d112ca6e0e55150d2fdbc704474530}} 
+\index{Game@{Game}!````~Game@{$\sim$Game}}
+\index{````~Game@{$\sim$Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{$\sim$Game()}{~Game()}}
+{\footnotesize\ttfamily Game\+::$\sim$\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calling the window closing function 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_a59057e71a68e69244973dc65d4f4da6a}\label{class_game_a59057e71a68e69244973dc65d4f4da6a}} 
+\index{Game@{Game}!changeState@{changeState}}
+\index{changeState@{changeState}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{changeState()}{changeState()}}
+{\footnotesize\ttfamily void Game\+::change\+State (\begin{DoxyParamCaption}\item[{int}]{number\+Of\+Cell }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The function responsible for the state of the cell, either 0 or 1 (0 or X) \mbox{\Hypertarget{class_game_a045b319fc8b9c8e8ca183bec74aff893}\label{class_game_a045b319fc8b9c8e8ca183bec74aff893}} 
+\index{Game@{Game}!drawO@{drawO}}
+\index{drawO@{drawO}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{drawO()}{drawO()}}
+{\footnotesize\ttfamily sf\+::\+Circle\+Shape Game\+::drawO (\begin{DoxyParamCaption}\item[{int}]{number\+Of\+Cell }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+In case of clicking and drawing 0 
+\begin{DoxyParams}{Parameters}
+{\em number\+Of\+Cell} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_a6c79ed38c2abb685f737760b4ebd88e4}\label{class_game_a6c79ed38c2abb685f737760b4ebd88e4}} 
+\index{Game@{Game}!drawX@{drawX}}
+\index{drawX@{drawX}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{drawX()}{drawX()}}
+{\footnotesize\ttfamily std\+::array$<$ sf\+::\+Vertex\+Array, 2 $>$ Game\+::drawX (\begin{DoxyParamCaption}\item[{int}]{number\+Of\+Cell }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+In case of clicking and drawing X 
+\begin{DoxyParams}{Parameters}
+{\em number\+Of\+Cell} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_a15f85bb1959ffeae84f17c7f08db9018}\label{class_game_a15f85bb1959ffeae84f17c7f08db9018}} 
+\index{Game@{Game}!initWindow@{initWindow}}
+\index{initWindow@{initWindow}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{initWindow()}{initWindow()}}
+{\footnotesize\ttfamily void Game\+::init\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Window creation function \mbox{\Hypertarget{class_game_a29ef548ad85b1eb5473cd8664a7e0cb2}\label{class_game_a29ef548ad85b1eb5473cd8664a7e0cb2}} 
+\index{Game@{Game}!makeGrid@{makeGrid}}
+\index{makeGrid@{makeGrid}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{makeGrid()}{makeGrid()}}
+{\footnotesize\ttfamily std\+::array$<$ sf\+::\+Vertex\+Array, 4 $>$ Game\+::make\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Drawing a grid for the game \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_a83bb177df714d38779ac0b17a560eaa5}\label{class_game_a83bb177df714d38779ac0b17a560eaa5}} 
+\index{Game@{Game}!makeO@{makeO}}
+\index{makeO@{makeO}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{makeO()}{makeO()}}
+{\footnotesize\ttfamily sf\+::\+Circle\+Shape Game\+::makeO (\begin{DoxyParamCaption}\item[{float}]{x\+\_\+0,  }\item[{float}]{y\+\_\+0 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Drawing 0 
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+0} & \\
+\hline
+{\em y\+\_\+0} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_a7017ade48dee9c965f56f77c5e992339}\label{class_game_a7017ade48dee9c965f56f77c5e992339}} 
+\index{Game@{Game}!makeX@{makeX}}
+\index{makeX@{makeX}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{makeX()}{makeX()}}
+{\footnotesize\ttfamily std\+::array$<$ sf\+::\+Vertex\+Array, 2 $>$ Game\+::makeX (\begin{DoxyParamCaption}\item[{float}]{x\+\_\+0,  }\item[{float}]{y\+\_\+0 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Drawing X 
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+0} & \\
+\hline
+{\em y\+\_\+0} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_a8ea4777fdc751b40f778997b76ee7cf9}\label{class_game_a8ea4777fdc751b40f778997b76ee7cf9}} 
+\index{Game@{Game}!pollEvents@{pollEvents}}
+\index{pollEvents@{pollEvents}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{pollEvents()}{pollEvents()}}
+{\footnotesize\ttfamily void Game\+::poll\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The function responsible for pressing the keys \mbox{\Hypertarget{class_game_a15ddd769261d923827a3cdf41499c843}\label{class_game_a15ddd769261d923827a3cdf41499c843}} 
+\index{Game@{Game}!render@{render}}
+\index{render@{render}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Game\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The function calls drawX and drawY thereby drawing X and Y in the playing field \mbox{\Hypertarget{class_game_a1ab78f5ed0d5ea879157357cf2fb2afa}\label{class_game_a1ab78f5ed0d5ea879157357cf2fb2afa}} 
+\index{Game@{Game}!run@{run}}
+\index{run@{run}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Game\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The cycle of the game \mbox{\Hypertarget{class_game_a79df6376b332d63c9eca0dcee30305c3}\label{class_game_a79df6376b332d63c9eca0dcee30305c3}} 
+\index{Game@{Game}!update@{update}}
+\index{update@{update}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Game\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates a coordinate for drawing 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_a399e6ac5b37307b16dc9f769e0b538c9}\label{class_game_a399e6ac5b37307b16dc9f769e0b538c9}} 
+\index{Game@{Game}!event@{event}}
+\index{event@{event}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{event}{event}}
+{\footnotesize\ttfamily sf\+::\+Event Game\+::event}
+
+\mbox{\Hypertarget{class_game_a3987c7e6e2bcc101c1be039b3d9e956c}\label{class_game_a3987c7e6e2bcc101c1be039b3d9e956c}} 
+\index{Game@{Game}!game@{game}}
+\index{game@{game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{game}{game}}
+{\footnotesize\ttfamily std\+::array$<$int, 9$>$ Game\+::game}
+
+\mbox{\Hypertarget{class_game_a5917c68cc38a58754e2114a886d93ea4}\label{class_game_a5917c68cc38a58754e2114a886d93ea4}} 
+\index{Game@{Game}!grid@{grid}}
+\index{grid@{grid}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{grid}{grid}}
+{\footnotesize\ttfamily std\+::array$<$sf\+::\+Vertex\+Array, 4$>$ Game\+::grid}
+
+\mbox{\Hypertarget{class_game_a0b8e19cc87748ad6d986eaeca264b279}\label{class_game_a0b8e19cc87748ad6d986eaeca264b279}} 
+\index{Game@{Game}!settings@{settings}}
+\index{settings@{settings}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{settings}{settings}}
+{\footnotesize\ttfamily sf\+::\+Context\+Settings Game\+::settings}
+
+\mbox{\Hypertarget{class_game_a75c39a2ccf296db2115781906a3711d7}\label{class_game_a75c39a2ccf296db2115781906a3711d7}} 
+\index{Game@{Game}!state@{state}}
+\index{state@{state}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily bool Game\+::state = false}
+
+\mbox{\Hypertarget{class_game_af00d15651edd39b7c28262b23bb50c7a}\label{class_game_af00d15651edd39b7c28262b23bb50c7a}} 
+\index{Game@{Game}!window@{window}}
+\index{window@{window}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window$\ast$ Game\+::window}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+ASUS/\+Desktop/untitled2/objects/\mbox{\hyperlink{game1_8h}{game1.\+h}}\end{DoxyCompactItemize}
