@@ -31,6 +31,10 @@ ___
 ### https://www.youtube.com/playlist?list=PLRtjMdoYXLf4L0UVTggZdTV55baO6x6CO
 ### 2)SFML tutorial:
 ### https://www.sfml-dev.org/tutorials/2.5/
-
-
+### 3)Link to CLION:
+### https://www.jetbrains.com/ru-ru/clion/
+### 4)Educational video on SFML:
+### https://youtu.be/Nb2RI48JH4g
+### 5)Basic knowledge of C++:
+### https://purecodecpp.com/
 
