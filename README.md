@@ -6,11 +6,6 @@ ___
 ### The goal is to develop the skill of writing classes and functions in C ++, to discover new features of this programming language using the SFML library.
 ### Tasks - write a game of tic-tac-toe using the SFML library.
 
-## An example of the game
-___
-### Detailed step-by-step lessons on how to create a tic-tac-toe game.
-### https://www.youtube.com/playlist?list=PLRtjMdoYXLf4L0UVTggZdTV55baO6x6CO
-
 ## Description
 ___
 ### The usual implementation of the game tic-tac-toe in c ++ and SFML version 2.5.2
@@ -29,3 +24,13 @@ ___
 ## And now you can play
 ___
 ![Screenshot](pic/pngwing.com.png)
+
+## Links to sources
+___
+### 1)Detailed step-by-step lessons on how to create a tic-tac-toe game:
+### https://www.youtube.com/playlist?list=PLRtjMdoYXLf4L0UVTggZdTV55baO6x6CO
+### 2)SFML tutorial:
+### https://www.sfml-dev.org/tutorials/2.5/
+
+
+
